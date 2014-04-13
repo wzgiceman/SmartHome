@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择发送请求模式："
+        android:textSize="22sp" />
+    
+    <RadioGroup 
+        android:id="@+id/radioGroup1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     	<RadioButton 
+     	    android:layout_width="wrap_content" 
+         	android:layout_height="wrap_content" 
+         	android:id="@+id/radioWIFIForEnv" 
+         	android:text="WIFI模式" 
+         	android:checked="true">
+     	    
+     	</RadioButton>
+     	<RadioButton 
+     	    android:layout_width="wrap_content" 
+     	    android:layout_height="wrap_content" 
+     	    android:id="@+id/radioMSGForEnv" 
+     	    android:text="短信模式">
+     	    
+     	</RadioButton>    
+  </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="温度："
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:text="发送" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnHum"
+            android:layout_alignBottom="@+id/btnHum"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:text="湿度："
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:text="发送" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvSmoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnSmoke"
+            android:layout_alignBottom="@+id/btnSmoke"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:text="烟雾："
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSmoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:text="发送" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnFire"
+            android:layout_alignBottom="@+id/btnFire"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:text="火焰：" />
+
+        <Button
+            android:id="@+id/btnFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="开始监听" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvBlaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnBlaze"
+            android:layout_alignBottom="@+id/btnBlaze"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:text="强光：" />
+
+        <Button
+            android:id="@+id/btnBlaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="停止监听" />
+
+    </RelativeLayout>
+
+</LinearLayout>
